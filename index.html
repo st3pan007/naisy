@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Naisy - Kompletní péče o váš vzhled v Prostějově. Kadeřnický & kosmetický salon, Naisy Gentleman a permanentní makeup.">
+    <title>Naisy - Beauty & Gentleman | Prostějov</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css?v=1.4">
+    <link rel="stylesheet" href="css/homepage-services.css?v=1.4">
+    <link rel="stylesheet" href="css/animations.css?v=1.4">
+</head>
+<body>
+    <!-- Navigation Component -->
+    <div id="navbar-container"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: linear-gradient(rgba(253, 252, 248, 0.65), rgba(253, 252, 248, 0.75)), url('https://res.cloudinary.com/dlvunn4yc/image/upload/c_limit,w_1920/f_auto/q_auto/v1759234820/HomeBackground_mdzr8t.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="line-1">KRÁSA & ELEGANCE</span>
+                </h1>
+                <div class="hero-line"></div>
+                <p class="hero-subtitle">
+                    Kompletní péče o váš vzhled v Prostějově
+                </p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">
+                        Vybrat službu
+                        <i class="ph-arrow-down"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        Kontakt
+                        <i class="ph-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <div class="video-wrapper">
+                <div class="video-container" style="background-image: url('https://res.cloudinary.com/dlvunn4yc/image/upload/c_limit,w_1200/f_auto/q_auto/v1759234820/HomeBackground_mdzr8t.jpg'); background-size: cover; background-position: center;">
+                    <!-- About fotka místo videa -->
+                </div>
+                <p class="video-caption">
+                    "Vítejte v mém světě krásy a péče"
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" style="position: relative;">
+        <div class="about-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(250, 249, 245, 0.95), rgba(250, 249, 245, 0.98));"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <div class="about-content-with-image">
+                <div class="about-image-wrapper">
+                    <img src="https://res.cloudinary.com/dlvunn4yc/image/upload/c_fill,w_400,h_500,g_auto/f_auto/q_auto/v1759234838/HomeAbout_wpwl6x.jpg" alt="Pavlína Leitgebová" loading="lazy" class="about-image">
+                </div>
+                <div class="about-text-wrapper">
+                    <h2 class="about-name">Pavlína Leitgebová</h2>
+                    <div class="about-divider"></div>
+                    <blockquote class="about-quote">
+                        "Krása není jen o vzhledu,<br>
+                        ale o pocitu sebevědomí."
+                    </blockquote>
+                    <div class="about-text">
+                        <div id="about-text-collapsed" class="about-text-collapsed">
+                            <p>Vystudovala jsem kosmetickou školu a v Beauty světě se pohybuji více než 20 let.</p>
+                            <button class="about-toggle" onclick="toggleAboutText()">
+                                Zobrazit více <span class="toggle-arrow">></span>
+                            </button>
+                        </div>
+                        <div id="about-text-expanded" class="about-text-expanded" style="display: none;">
+                            <p>
+                                Vystudovala jsem kosmetickou školu a v Beauty světě se pohybuji více než 20 let. 
+                                Vybudovala jsem dva salony, které nabízí komplexní péči o váš vzhled.
+                            </p>
+                            <p>
+                                Naisy Kadeřnický a Kosmetický salon je moje celoživotní práce a láska, kde se odráží každý můj den. 
+                                Barber Naisy Gentleman je prostředí kde muži zažijí příjemné, skoro až klubové prostředí, mám ráda když odcházejí upravení a odpočatí.
+                            </p>
+                            <p>
+                                Permanentní Make Up je dnes krásná a umělecká práce, která dlouhodobě zvýrazní ženskou tvář a já se dnes PMU věnuji nejvíce. 
+                                Vlastně ani nevím jestli je to práce nebo hobby - pro mě asi obojí.
+                            </p>
+                            <button class="about-toggle" onclick="toggleAboutText()">
+                                Zobrazit méně <span class="toggle-arrow" style="transform: rotate(90deg); display: inline-block;">></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services" style="background-image: url('https://res.cloudinary.com/dlvunn4yc/image/upload/c_limit,w_1920/f_auto/q_auto/v1759234820/HomeBackground_mdzr8t.jpg'); background-size: cover; background-position: center; background-attachment: fixed; position: relative;">
+        <div class="services-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(253, 252, 248, 0.97);"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <h2 class="services-title" style="text-align: center;">Naše služby</h2>
+            <div class="services-grid">
+                <!-- Beauty Salon Card -->
+                <div class="service-card" data-service="beauty">
+                    <div class="service-icon">
+                        <i class="ph-flower-lotus-thin"></i>
+                    </div>
+                    <h3 class="service-name">Naisy Kadeřnický & Kosmetický salon</h3>
+                    <div class="service-buttons" style="margin-top: 2rem;">
+                        <a href="kadernictvi-kosmetika.html" class="btn-text">
+                            Více informací
+                            <i class="ph-arrow-right-thin"></i>
+                        </a>
+                        <a href="#" class="btn-outline" data-booking="beauty">
+                            Rezervovat
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Barber Shop Card -->
+                <div class="service-card" data-service="barber">
+                    <div class="service-icon">
+                        <i class="ph-scissors-thin"></i>
+                    </div>
+                    <h3 class="service-name">Naisy Gentleman</h3>
+                    <div class="service-buttons" style="margin-top: 2rem;">
+                        <a href="naisy-gentleman.html" class="btn-text">
+                            Více informací
+                            <i class="ph-arrow-right-thin"></i>
+                        </a>
+                        <a href="#" class="btn-outline" data-booking="barber">
+                            Rezervovat
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PMU Card -->
+                <div class="service-card" data-service="pmu">
+                    <div class="service-icon">
+                        <i class="ph-paint-brush-thin"></i>
+                    </div>
+                    <h3 class="service-name">Permanentní Make-up<br>Pavlína Leitgebová</h3>
+                    <div class="service-buttons" style="margin-top: 2rem;">
+                        <a href="permanentni-makeup.html" class="btn-text">
+                            Více informací
+                            <i class="ph-arrow-right-thin"></i>
+                        </a>
+                        <a href="#" class="btn-outline" data-booking="pmu">
+                            Rezervovat
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                <h2 class="contact-title" style="text-align: center;">Najdete nás</h2>
+                    <div class="contact-divider"></div>
+                    
+                    <div class="contact-item">
+                        <i class="ph-map-pin-thin"></i>
+                        <div>
+                            <strong>Adresa</strong><br>
+                            Blahoslavova 8<br>
+                            Prostějov
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="ph-envelope-thin"></i>
+                        <div>
+                            <strong>Email</strong><br>
+                            <a href="mailto:leitgebova@naisy.cz">leitgebova@naisy.cz</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="ph-phone-thin"></i>
+                        <div>
+                            <strong>Telefon</strong><br>
+                            <a href="tel:+420582346071">+420 582 346 071</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.5887608506!2d16.999!3d49.2774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDE2JzM4LjYiTiAxN8KwMDAnMDAuMCJF!5e0!3m2!1scs!2scz!4v1234567890"
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <nav class="mobile-menu">
+            <a href="kadernictvi-kosmetika.html">Kadeřnický & Kosmetický salon</a>
+            <a href="naisy-gentleman.html">Naisy Gentleman</a>
+            <a href="permanentni-makeup.html">Permanentní Make-up</a>
+        </nav>
+    </div>
+
+    <script src="js/components/navbar.js?v=1.4"></script>
+    <script src="js/components/footer.js?v=1.4"></script>
+    <script src="js/main-clean.js?v=1.4"></script>
+    <script>
+        function toggleAboutText() {
+            const collapsed = document.getElementById('about-text-collapsed');
+            const expanded = document.getElementById('about-text-expanded');
+            
+            if (collapsed.style.display === 'none') {
+                collapsed.style.display = 'block';
+                expanded.style.display = 'none';
+            } else {
+                collapsed.style.display = 'none';
+                expanded.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

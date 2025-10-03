@@ -1,0 +1,141 @@
+/* Service Hero Enhanced Styles */
+.service-hero {
+    position: relative;
+    min-height: 45vh; /* Snížená výška */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: 80px; /* Výška navbar */
+}
+
+.service-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, 
+        rgba(0, 0, 0, 0.3) 0%, 
+        rgba(0, 0, 0, 0.5) 100%);
+    z-index: 1;
+}
+
+.service-hero .container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex; /* Přidáno pro centrování */
+    justify-content: center;
+    align-items: center;
+}
+
+.service-hero-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 800px; /* Omezení šířky pro lepší centrování */
+    margin: 0 auto;
+}
+
+.service-hero-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 600;
+    color: white;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.02em;
+}
+
+.service-hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: rgba(255, 255, 255, 0.95);
+    margin: 0;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 12px 28px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #1a1a1a;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.back-link:hover {
+    background: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.back-link i {
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.back-link:hover i {
+    transform: translateX(-3px);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .service-hero {
+        min-height: 500px;
+        padding: 100px 0 60px;
+        background-attachment: scroll;
+    }
+    
+    .service-hero-content {
+        padding-bottom: 2rem; /* Fixní padding pod CTA tlačítkem */
+    }
+    
+    .service-hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .service-hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .back-link {
+        padding: 10px 24px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-hero {
+        padding: 90px 0 50px;
+    }
+    
+    .service-hero-content {
+        gap: 1rem;
+        padding-bottom: 2.5rem; /* Větší padding na malých zařízeních */
+    }
+    
+    .service-hero-title {
+        font-size: 1.5rem;
+    }
+}
