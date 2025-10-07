@@ -1,0 +1,360 @@
+/* Service Detail Pages - Updated Styles */
+
+/* Service Hero Section */
+.service-hero {
+    padding: 120px 0 60px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.service-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(250, 249, 245, 0.92) 0%, rgba(245, 240, 232, 0.92) 100%);
+    z-index: 1;
+}
+
+.service-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.service-hero-content {
+    max-width: 800px;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #C9A961;
+}
+
+.service-hero-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 3rem;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.service-hero-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+}
+
+/* Service Content Section */
+.service-content {
+    padding: 80px 0;
+}
+
+.service-intro {
+    max-width: 800px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.service-intro h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.2rem;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.service-intro p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* Pricing Section */
+.pricing-section {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.pricing-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #1a1a1a;
+    margin-bottom: 50px;
+}
+
+.pricing-category {
+    margin-bottom: 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.pricing-category h4 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #C9A961;
+}
+
+.category-description {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.pricing-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: #f0f0f0;
+}
+
+.pricing-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.pricing-item:hover {
+    background: #faf9f5;
+    transform: translateX(5px);
+}
+
+.service-info {
+    flex: 1;
+}
+
+.service-name {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+}
+
+.service-duration {
+    font-size: 0.85rem;
+    color: #999;
+    display: block;
+    margin-top: 5px;
+}
+
+.service-description {
+    font-size: 0.85rem;
+    color: #666;
+    display: block;
+    margin-left: 10px;
+}
+
+.service-price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #C9A961;
+    white-space: nowrap;
+}
+
+/* Service Benefits */
+.service-benefits {
+    max-width: 800px;
+    margin: 60px auto 0;
+    background: #faf9f5;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.service-benefits h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.service-benefits ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service-benefits li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.service-benefits i {
+    color: #C9A961;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+/* Service Info */
+.service-info {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.service-info h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.service-info p {
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.service-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service-info li {
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
+    color: #666;
+}
+
+.service-info li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #C9A961;
+    font-weight: bold;
+}
+
+/* CTA Section */
+.service-cta {
+    padding: 80px 0;
+    text-align: center;
+    color: white;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.service-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.9) 0%, rgba(45, 45, 45, 0.9) 100%);
+    z-index: 1;
+}
+
+.service-cta .container {
+    position: relative;
+    z-index: 2;
+}
+
+.service-cta h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.service-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: #C9A961;
+    color: white;
+    box-shadow: 0 4px 15px rgba(201, 169, 97, 0.3);
+}
+
+.btn-primary:hover {
+    background: #A08654;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(201, 169, 97, 0.4);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: #1a1a1a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-hero-title {
+        font-size: 2rem;
+    }
+    
+    .pricing-category {
+        padding: 20px;
+    }
+    
+    .pricing-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .service-benefits ul {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+}

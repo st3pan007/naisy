@@ -1,0 +1,452 @@
+/* ===============================================
+   NAISY - Subpage Styles
+   =============================================== */
+
+/* ===============================================
+   PAGE HERO
+   =============================================== */
+.page-hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    background: linear-gradient(135deg, var(--warm-white) 0%, var(--cream) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.page-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 80%;
+    height: 200%;
+    background: radial-gradient(circle, var(--accent-gold) 0%, transparent 70%);
+    opacity: 0.05;
+    animation: float 20s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+.page-hero-content {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.page-hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.page-hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--gray);
+    margin-bottom: 2.5rem;
+    font-style: italic;
+    opacity: 0;
+    animation: fadeInUp 1s ease 0.2s forwards;
+}
+
+.page-hero .btn {
+    opacity: 0;
+    animation: fadeInUp 1s ease 0.4s forwards;
+}
+
+/* Service-specific hero colors */
+.page-hero[data-service="beauty"] {
+    background: linear-gradient(135deg, #FFF9F0 0%, #FFE5D0 100%);
+}
+
+.page-hero[data-service="gentleman"] {
+    background: linear-gradient(135deg, #F0F4F8 0%, #D9E2EC 100%);
+}
+
+.page-hero[data-service="pmu"] {
+    background: linear-gradient(135deg, #FFF0F3 0%, #FFD6E0 100%);
+}
+
+/* ===============================================
+   SALON ABOUT
+   =============================================== */
+.salon-about {
+    padding: var(--space-2xl) 0;
+}
+
+.salon-about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: var(--font-heading);
+}
+
+.section-divider {
+    width: 60px;
+    height: 2px;
+    background: var(--accent-gold);
+    margin: 2rem auto 3rem;
+}
+
+.salon-description {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--gray);
+    margin-bottom: 3rem;
+}
+
+.salon-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.feature-item i {
+    font-size: 1.5rem;
+    color: var(--accent-gold);
+}
+
+.feature-item span {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+}
+
+/* New Feature Cards Grid */
+.salon-features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    margin-top: 4rem;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 2rem;
+    background: var(--cream);
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+    transition: var(--transition-smooth);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-color: var(--accent-gold);
+}
+
+.feature-card i {
+    font-size: 2.5rem;
+    color: var(--accent-gold);
+    margin-bottom: 1rem;
+}
+
+.feature-card h4 {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.feature-card p {
+    font-size: 0.9rem;
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+/* ===============================================
+   SALON SERVICES
+   =============================================== */
+.salon-services {
+    padding: var(--space-2xl) 0;
+    background: var(--warm-white);
+}
+
+.services-categories {
+    display: grid;
+    gap: 4rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.service-category {
+    background: var(--cream);
+    padding: 2.5rem;
+    border: 1px solid var(--light-gray);
+    position: relative;
+}
+
+.category-title {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.category-title::after {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 1px;
+    background: var(--accent-gold);
+}
+
+.service-list {
+    margin-top: 2rem;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--light-gray);
+    transition: var(--transition-fast);
+}
+
+.service-item:last-child {
+    border-bottom: none;
+}
+
+.service-item:hover {
+    background: var(--warm-white);
+    margin: 0 -1rem;
+    padding: 1rem;
+}
+
+.service-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.service-name {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.service-duration {
+    font-size: 0.875rem;
+    color: var(--gray);
+    font-style: italic;
+}
+
+.service-price {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--accent-gold);
+    white-space: nowrap;
+}
+
+/* ===============================================
+   OPENING HOURS
+   =============================================== */
+.opening-hours {
+    padding: var(--space-xl) 0;
+    text-align: center;
+}
+
+.hours-content {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.hours-grid {
+    margin-top: 2rem;
+}
+
+.hours-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.hours-item:last-child {
+    border-bottom: none;
+}
+
+.day {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+}
+
+.time {
+    color: var(--gray);
+    font-size: 0.95rem;
+}
+
+.hours-note {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    color: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.hours-note i {
+    font-size: 1.125rem;
+    color: var(--accent-gold);
+}
+
+/* ===============================================
+   CONTACT CTA - Styles moved to contact-layout.css
+   =============================================== */
+/* CTA styles are now in contact-layout.css for consistency */
+
+/* ===============================================
+   CONTACT INFO (Subpage version)
+   =============================================== */
+.contact-info {
+    padding: var(--space-xl) 0;
+    background: var(--warm-white);
+}
+
+.contact-info h3 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+/* ===============================================
+   GALLERY (for future use)
+   =============================================== */
+.gallery {
+    padding: var(--space-2xl) 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1;
+    background: var(--light-gray);
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.gallery-item:hover {
+    transform: scale(0.98);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-smooth);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* ===============================================
+   RESPONSIVE
+   =============================================== */
+@media (max-width: 768px) {
+    .page-hero {
+        min-height: 50vh;
+        padding-top: 140px;
+    }
+    
+    .page-hero-title {
+        font-size: 2rem;
+    }
+    
+    .service-category {
+        padding: 1.5rem;
+    }
+    
+    .service-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .service-item:hover {
+        margin: 0;
+        padding: 1rem 0;
+    }
+    
+    .salon-features {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+    
+    .feature-item {
+        justify-content: flex-start;
+    }
+    
+    .salon-features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .feature-card {
+        padding: 1.5rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+    }
+    
+    .contact-info .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .category-title {
+        font-size: 1.25rem;
+    }
+    
+    .service-name {
+        font-size: 0.95rem;
+    }
+    
+    .service-price {
+        font-size: 0.9rem;
+    }
+}

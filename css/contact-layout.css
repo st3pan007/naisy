@@ -1,0 +1,322 @@
+/* Contact Section - New Layout */
+
+.contact-info {
+    background: #fafafa;
+    padding: 80px 0;
+}
+
+.contact-info .section-title {
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.contact-info .section-divider {
+    width: 60px;
+    height: 3px;
+    background: #C9A961;
+    margin: 0 auto 50px;
+}
+
+/* Contact and Hours Row */
+.contact-hours-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+/* Contact Details Box */
+.contact-details-box {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.contact-details-box h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.contact-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Font Awesome icons in contact */
+.contact-item > i.fas, 
+.contact-item > i.far {
+    color: #C9A961;
+    font-size: 18px;
+    flex-shrink: 0;
+    width: 20px;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.contact-item a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #C9A961;
+}
+
+/* Social Links - Special styling */
+.contact-item.social-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 35px; /* Increased from 25px to push icons lower */
+    margin-bottom: 0;
+    margin-left: -5px; /* Negative margin to align perfectly with heading */
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #C9A961;
+    color: #C9A961 !important;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: transparent;
+    border-color: #1a1a1a;
+    color: #1a1a1a !important;
+    transform: translateY(-2px);
+}
+
+.social-link i {
+    font-size: 18px;
+    color: inherit !important;
+    display: inline-block !important;
+}
+
+/* Opening Hours Box */
+.opening-hours-box {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.opening-hours-box h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+}
+
+.hours-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hours-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: #f9f9f9;
+    border-radius: 6px;
+}
+
+.hours-item .day {
+    color: #666;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.hours-item .time {
+    color: #C9A961;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.hours-note {
+    margin-top: 20px;
+    padding: 12px 15px;
+    background: #fff9f0;
+    border-left: 3px solid #C9A961;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hours-note i {
+    color: #C9A961;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+/* Map Wrapper */
+.contact-map-wrapper {
+    width: 100%;
+    height: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.contact-map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* CTA Section - Unified style for all pages */
+.contact-cta {
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
+}
+
+/* Dark overlay */
+.contact-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65) !important;
+    z-index: 0;
+    animation: none !important;
+    transform: none !important;
+}
+
+/* Beauty Salon CTA Background */
+.beauty-salon-page .contact-cta {
+    background-image: url('https://images.pexels.com/photos/3738355/pexels-photo-3738355.jpeg?auto=compress&cs=tinysrgb&w=1920');
+}
+
+/* Barber Shop CTA Background */
+.barber-shop-page .contact-cta {
+    background-image: url('https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg?auto=compress&cs=tinysrgb&w=1920');
+}
+
+/* PMU CTA Background */
+.pmu-page .contact-cta {
+    background-image: url('https://images.pexels.com/photos/3785806/pexels-photo-3785806.jpeg?auto=compress&cs=tinysrgb&w=1920');
+}
+
+.cta-content {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.cta-subtitle {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cta-buttons .btn-primary {
+    background: white;
+    color: #C9A961;
+    border: 2px solid white;
+}
+
+.cta-buttons .btn-primary:hover {
+    background: transparent;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.cta-buttons .btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.cta-buttons .btn-secondary:hover {
+    background: white;
+    color: #C9A961;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.cta-buttons .btn i {
+    font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-hours-row {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .contact-details-box,
+    .opening-hours-box {
+        padding: 30px 25px;
+    }
+    
+    .contact-map-wrapper {
+        height: 350px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
