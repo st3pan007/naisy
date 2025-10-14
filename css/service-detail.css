@@ -1,0 +1,283 @@
+/* Service Detail Page Styles */
+
+/* Service Hero */
+.service-detail-hero {
+    background: linear-gradient(135deg, #faf9f5 0%, #f5f0e8 100%);
+    padding: 120px 0 60px;
+    position: relative;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: #C9A961;
+}
+
+.breadcrumb span {
+    color: #999;
+}
+
+.service-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 3rem;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.service-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+}
+
+/* Service Content */
+.service-detail-content {
+    padding: 80px 0;
+}
+
+.service-detail-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+/* Service Description */
+.service-description h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.service-description h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.service-description p {
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.service-includes,
+.service-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.service-includes li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    color: #333;
+}
+
+.service-includes i {
+    color: #C9A961;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.service-benefits li {
+    padding: 8px 0;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-benefits li i {
+    color: #C9A961;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+/* Price List */
+.service-pricelist {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 20px;
+}
+
+.service-pricelist h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+}
+
+.price-table {
+    border-top: 1px solid #f0f0f0;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.price-item:hover {
+    background: #faf9f5;
+    margin: 0 -20px;
+    padding: 20px;
+}
+
+.price-info h4 {
+    font-size: 16px;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.price-info .duration {
+    font-size: 13px;
+    color: #999;
+}
+
+.price-item .price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #C9A961;
+}
+
+.price-item .price::after {
+    content: ' Kč';
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Booking CTA */
+.booking-cta {
+    text-align: center;
+    padding: 35px;
+    background: linear-gradient(135deg, #fdfcf8 0%, #faf9f5 100%);
+    border-radius: 12px;
+    margin-top: 30px;
+    border: 1px solid rgba(201, 169, 97, 0.15);
+}
+
+.booking-cta h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.6rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.booking-cta p {
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+.booking-cta .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 35px;
+    background: #C9A961;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(201, 169, 97, 0.3);
+}
+
+.booking-cta .btn:hover {
+    background: #A08654;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(201, 169, 97, 0.4);
+}
+
+.booking-cta .btn i {
+    font-size: 18px;
+}
+
+/* Service Gallery */
+.service-gallery {
+    margin-top: 60px;
+}
+
+.service-gallery h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 250px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .service-detail-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .service-pricelist {
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-title {
+        font-size: 2rem;
+    }
+    
+    .service-pricelist {
+        padding: 30px 20px;
+    }
+    
+    .price-item:hover {
+        margin: 0 -10px;
+        padding: 20px 10px;
+    }
+}

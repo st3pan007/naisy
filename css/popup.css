@@ -1,0 +1,110 @@
+/* ============================================
+   POPUP MODAL STYLES
+   ============================================ */
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    opacity: 0;
+    animation: popupFadeIn 0.3s ease forwards;
+}
+
+@keyframes popupFadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.popup-modal {
+    background: linear-gradient(135deg, #FFFCF9 0%, #FFF8F0 100%);
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+    padding: 2.5rem;
+    position: relative;
+    transform: scale(0.9);
+    animation: popupScaleIn 0.3s ease 0.1s forwards;
+}
+
+@keyframes popupScaleIn {
+    to {
+        transform: scale(1);
+    }
+}
+
+.popup-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(201, 169, 97, 0.1);
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 1.5rem;
+    color: #C9A961;
+}
+
+.popup-close:hover {
+    background: rgba(201, 169, 97, 0.2);
+    transform: rotate(90deg);
+}
+
+.popup-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 1rem 0;
+    text-align: center;
+}
+
+.popup-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4a4a4a;
+    margin: 0;
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+.popup-divider {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(to right, #C9A961, #E8D4A8);
+    margin: 1.5rem auto;
+    border-radius: 2px;
+}
+
+/* Mobile responsive */
+@media (max-width: 640px) {
+    .popup-modal {
+        padding: 2rem 1.5rem;
+        max-width: calc(100% - 2rem);
+    }
+
+    .popup-title {
+        font-size: 1.5rem;
+    }
+
+    .popup-text {
+        font-size: 0.95rem;
+    }
+}

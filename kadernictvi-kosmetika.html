@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Naisy Kadeřnický & Kosmetický salon Prostějov - Profesionální kosmetika, kadeřnictví, manikúra, pedikúra a masáže v centru Prostějova. Blahoslavova 8. Objednejte se!">
+    <meta name="keywords" content="kadeřnictví prostějov, kosmetika prostějov, manikúra prostějov, pedikúra prostějov, beauty salon prostějov, naisy salon">
+    <meta property="og:title" content="Naisy Kadeřnický & Kosmetický salon | Prostějov">
+    <meta property="og:description" content="Profesionální kosmetické a kadeřnické služby v centru Prostějova. Kompletní péče o váš vzhled.">
+    <meta property="og:type" content="website">
+    <title>Naisy Kadeřnický & Kosmetický salon | Prostějov</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="48x48" href="https://res.cloudinary.com/dlvunn4yc/image/upload/v1760437947/NaisyFavicon_1_fv7qyg.png">
+    <link rel="apple-touch-icon" sizes="48x48" href="https://res.cloudinary.com/dlvunn4yc/image/upload/v1760437947/NaisyFavicon_1_fv7qyg.png">
+    
+    <!-- Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BeautySalon",
+      "name": "Naisy Kadeřnický & Kosmetický salon",
+      "description": "Profesionální kosmetické a kadeřnické služby v Prostějově",
+      "image": "https://res.cloudinary.com/dlvunn4yc/image/upload/v1759832235/NaisyKaKSalonLogo_knyyvy.svg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Blahoslavova 8",
+        "addressLocality": "Prostějov",
+        "postalCode": "796 01",
+        "addressCountry": "CZ"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.471,
+        "longitude": 17.113
+      },
+      "telephone": "+420582346071",
+      "email": "leitgebova@naisy.cz",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "12:00"
+        }
+      ],
+      "url": "https://naisy.cz/kadernictvi-kosmetika.html"
+    }
+    </script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght=400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css?v=1.4">
+    <link rel="stylesheet" href="css/subpage.css?v=1.4">
+    <link rel="stylesheet" href="css/beauty-services.css?v=1.4">
+    <link rel="stylesheet" href="css/services-expandable.css?v=1.4">
+    <link rel="stylesheet" href="css/contact-layout.css?v=1.4">
+    <link rel="stylesheet" href="css/animations.css?v=1.4">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/gallery-grid.css">
+</head>
+<body class="beauty-salon-page">
+
+    <!-- Navigation Component -->
+    <div id="navbar-container"></div>
+
+    <!-- Hero Section -->
+    <section class="page-hero" data-service="beauty">
+        <div class="hero-image" data-editable="image" data-field="beauty.hero.image" style="background-image: linear-gradient(rgba(255, 249, 240, 0.70), rgba(255, 229, 208, 0.70)), url('https://res.cloudinary.com/dlvunn4yc/image/upload/c_limit,w_1920/f_auto/q_auto/v1759503013/KadernictviHeader_x9rbaa.jpg'); background-size: cover; background-position: center; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1;"></div>
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="page-hero-content">
+                <h1 class="page-hero-title" data-editable="text" data-field="beauty.hero.title">Naisy Kadeřnický & Kosmetický salon Prostějov</h1>
+                <p class="page-hero-subtitle" data-editable="text" data-field="beauty.hero.subtitle">Kde krása potkává péči</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="#services" class="btn btn-primary">
+                        Naše služby
+                        <i class="ph-arrow-down"></i>
+                    </a>
+                    <a href="tel:+420582346071" class="btn btn-secondary">
+                        <i class="fas fa-phone"></i>
+                        +420 582 346 071
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Salon -->
+    <section class="salon-about">
+        <div class="container">
+            <div class="salon-about-content">
+            <h2 class="section-title" style="text-align: center;" data-editable="text" data-field="beauty.about.title">Váš osobní ráj krásy v Prostějově</h2>
+                <div class="section-divider"></div>
+                <p class="salon-description" data-editable="text" data-field="beauty.about.description">
+                    Naše filozofie je provádět běžné i nadstandardní služby v příjemném prostředí.
+                    Nabízíme novinky ze světa kosmetiky a kadeřnictví v kombinaci s moderním vybavením
+                    pro ty, kteří se chtějí hýčkat a mají kosmetiku stejně rádi jako my.
+                </p>
+                <div class="salon-features-grid">
+                    <div class="feature-card">
+                        <i class="ph-certificate-thin"></i>
+                        <h4 data-editable="text" data-field="beauty.features.0.title">Certifikovaní profesionálové</h4>
+                        <p data-editable="text" data-field="beauty.features.0.description">Tým s dlouholetou praxí a pravidelným vzděláváním</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="ph-sparkle-thin"></i>
+                        <h4 data-editable="text" data-field="beauty.features.1.title">Prémiová kosmetika</h4>
+                        <p data-editable="text" data-field="beauty.features.1.description">Používáme pouze ověřené značky nejvyšší kvality</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="ph-heart-thin"></i>
+                        <h4 data-editable="text" data-field="beauty.features.2.title">Individuální přístup</h4>
+                        <p data-editable="text" data-field="beauty.features.2.description">Každý klient je pro nás jedinečný</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="ph-map-pin-thin"></i>
+                        <h4 data-editable="text" data-field="beauty.features.3.title">Centrum Prostějova</h4>
+                        <p data-editable="text" data-field="beauty.features.3.description">Snadná dostupnost a parkování</p>
+                    </div>
+                </div>
+                
+                <!-- Instagram -->
+                <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--light-gray);">
+                    <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 1rem;">Sledujte nás na Instagramu</p>
+                    <div style="display: flex; gap: 1.5rem; justify-content: center; align-items: center;">
+                        <a href="https://www.instagram.com/naisy_prostejov/" target="_blank" style="color: var(--accent-gold); font-size: 2rem; transition: transform 0.3s; display: inline-block;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100034744496776" target="_blank" style="color: var(--accent-gold); font-size: 2rem; transition: transform 0.3s; display: inline-block;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Cards -->
+    <section id="services" class="services-cards">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;" data-editable="text" data-field="beauty.services.title">Naše služby</h2>
+            <div class="section-divider"></div>
+            
+            <div class="services-cards-grid">
+                <!-- Kosmetika -->
+                <div class="service-card-item" data-service="kosmetika">
+                    <div class="service-card-image">
+                        <img src="https://res.cloudinary.com/dlvunn4yc/image/upload/c_fill,w_600,h_400/f_auto/q_auto/v1759237676/SluzbaKosmetika_hdeyfa.jpg" alt="Kosmetika" loading="lazy">
+                    </div>
+                    <div class="service-card-content">
+                        <h3>KOSMETIKA</h3>
+                        <a href="sluzby/kadernictvi-kosmetika/kosmetika.html" class="btn-more">Více informací <span>›</span></a>
+                    </div>
+                </div>
+
+                <!-- Manikúra -->
+                <div class="service-card-item" data-service="manikura">
+                    <div class="service-card-image">
+                        <img src="https://res.cloudinary.com/dlvunn4yc/image/upload/c_fill,w_600,h_400/f_auto/q_auto/v1759237691/SluzbaManikura_dm7ytn.jpg" alt="Manikúra" loading="lazy">
+                    </div>
+                    <div class="service-card-content">
+                        <h3>MANIKÚRA</h3>
+                        <a href="sluzby/kadernictvi-kosmetika/manikura.html" class="btn-more">Více informací <span>›</span></a>
+                    </div>
+                </div>
+
+                <!-- Pedikúra -->
+                <div class="service-card-item" data-service="pedikura">
+                    <div class="service-card-image">
+                        <img src="https://res.cloudinary.com/dlvunn4yc/image/upload/c_fill,w_600,h_400/f_auto/q_auto/v1759237703/SluzbaPedikura_blzfwy.jpg" alt="Pedikúra" loading="lazy">
+                    </div>
+                    <div class="service-card-content">
+                        <h3>PEDIKÚRA</h3>
+                        <a href="sluzby/kadernictvi-kosmetika/pedikura.html" class="btn-more">Více informací <span>›</span></a>
+                    </div>
+                </div>
+
+                <!-- Permanentní make-up -->
+                <div class="service-card-item" data-service="pmu">
+                    <div class="service-card-image">
+                        <img src="https://res.cloudinary.com/dlvunn4yc/image/upload/c_fill,w_600,h_400/f_auto/q_auto/v1759947270/SluzbaPermanentniMakeup_mcdmnl.jpg" alt="Permanentní makeup" loading="lazy">
+                    </div>
+                    <div class="service-card-content">
+                        <h3>PERMANENTNÍ MAKE-UP</h3>
+                        <a href="permanentni-makeup.html" class="btn-more">Více informací <span>›</span></a>
+                    </div>
+                </div>
+
+                <!-- Kadeřnictví -->
+                <div class="service-card-item" data-service="kadernictvi">
+                    <div class="service-card-image">
+                        <img src="https://res.cloudinary.com/dlvunn4yc/image/upload/c_fill,w_600,h_400/f_auto/q_auto/v1759237666/SluzbaKadernictvi_m2e9vh.jpg" alt="Kadeřnictví" loading="lazy">
+                    </div>
+                    <div class="service-card-content">
+                        <h3>KADEŘNICTVÍ</h3>
+                        <a href="sluzby/kadernictvi-kosmetika/kadernictvi.html" class="btn-more">Více informací <span>›</span></a>
+                    </div>
+                </div>
+
+                <!-- Masáže -->
+                <div class="service-card-item" data-service="masaze">
+                    <div class="service-card-image">
+                        <img src="https://res.cloudinary.com/dlvunn4yc/image/upload/c_fill,w_600,h_400/f_auto/q_auto/v1759237699/SluzbaMasaze_p1l0ir.jpg" alt="Masáže" loading="lazy">
+                    </div>
+                    <div class="service-card-content">
+                        <h3>MASÁŽE</h3>
+                        <a href="sluzby/kadernictvi-kosmetika/masaze.html" class="btn-more">Více informací <span>›</span></a>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Instagram Work Reference -->
+            <div style="text-align: center; margin-top: 4rem; padding-top: 3rem; border-top: 1px solid var(--light-gray);">
+                <p style="font-size: 1.05rem; color: var(--gray); margin-bottom: 1rem;">
+                    Více z naší práce najdete na Instagramu
+                </p>
+                <a href="https://www.instagram.com/naisy_prostejov/" target="_blank" style="display: inline-flex; align-items: center; gap: 0.75rem; color: var(--accent-gold); font-size: 1.05rem; font-weight: 500; transition: all 0.3s; text-decoration: none;" onmouseover="this.style.transform='scale(1.05)'; this.style.color='#9b7c3f'" onmouseout="this.style.transform='scale(1)'; this.style.color='var(--accent-gold)'">
+                    <i class="fab fa-instagram" style="font-size: 1.8rem;"></i>
+                    <span>@naisy_prostejov</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interior Gallery (Náš salon) -->
+    <section class="interior-gallery">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;" data-editable="text" data-field="beauty.gallery.title">Náš salon</h2>
+            <div class="section-divider"></div>
+            <div class="interior-grid" id="beauty-salon-gallery">
+                <!-- Images will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA (moved before contact info) -->
+    <section id="booking" class="contact-cta" style="background-image: url('https://res.cloudinary.com/dlvunn4yc/image/upload/c_limit,w_1920/f_auto/q_auto/v1759503013/KadernictviHeader_x9rbaa.jpg'); background-size: cover; background-position: center; background-attachment: fixed; position: relative;">
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, rgba(253, 252, 248, 0.7), rgba(253, 252, 248, 0.85));"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <div class="cta-content">
+                <h2 class="cta-title">Připraveni na vaši proměnu?</h2>
+                <p class="cta-subtitle">Rezervujte si svůj termín ještě dnes</p>
+                <div class="cta-buttons">
+                    <a href="tel:+420582346071" class="btn btn-secondary">
+                        <i class="fas fa-phone"></i>
+                        +420 582 346 071
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info with Opening Hours (new layout) -->
+    <section class="contact-info">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">Kontakt</h2>
+            <div class="section-divider"></div>
+            
+            <!-- Contact and Hours Row -->
+            <div class="contact-hours-row">
+                <!-- Contact Details -->
+                <div class="contact-details-box">
+                    <h3>Kde nás najdete</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <span data-editable="text" data-field="company.address">Blahoslavova 8</span><br>
+                            <span data-editable="text" data-field="company.city">796 01 Prostějov</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <a href="tel:+420582346071" data-editable="text" data-field="company.phoneBeauty">+420 582 346 071</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <a href="mailto:leitgebova@naisy.cz" data-editable="text" data-field="company.beautyEmail">leitgebova@naisy.cz</a>
+                        </div>
+                    </div>
+                    <div class="contact-item social-links">
+                        <a href="https://www.instagram.com/naisy_prostejov/" target="_blank" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100034744496776" target="_blank" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Opening Hours -->
+                <div class="opening-hours-box">
+                    <h3>Otevírací doba</h3>
+                    <div id="beauty-hours">
+                        <!-- Hours will be loaded dynamically -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Map (full width below) -->
+            <div class="contact-map-wrapper">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2591.850!2d17.113!3d49.471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471293ab8b3f0f0b%3A0x0!2sBlahoslavova+8%2C+796+01+Prost%C4%9Bjov!5e0!3m2!1scs!2scz!4v1234567890"
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <nav class="mobile-menu">
+            <a href="index.html">Domů</a>
+            <a href="kadernictvi-kosmetika.html">Kadeřnický & Kosmetický salon</a>
+            <a href="naisy-gentleman.html">Naisy Gentleman</a>
+            <a href="permanentni-makeup.html">Permanentní Make-up</a>
+        </nav>
+    </div>
+
+    <!-- Loaders -->
+    <script src="js/loaders/supabase-client.js"></script>
+    <script src="js/loaders/gallery-loader.js"></script>
+    <script src="js/loaders/popup-loader.js"></script>
+    <script src="js/loaders/opening-hours-loader.js"></script>
+    
+    <!-- Scripts -->
+    <script src="js/components/navbar.js?v=1.4"></script>
+    <script src="js/components/footer.js?v=1.4"></script>
+    <script src="js/main-clean.js?v=1.4"></script>
+    
+    <!-- Load Gallery and Hours -->
+    <script>
+        loadGallery('interior-beauty', 'beauty-salon-gallery', 'grid');
+        loadOpeningHours('beauty', 'beauty-hours');
+    </script>
+</body>
+</html>

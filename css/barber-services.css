@@ -1,0 +1,169 @@
+/* Barber Shop Services Styles */
+
+/* Section paddings for Barber Shop */
+.barber-shop-page .salon-about {
+    padding: 80px 0;
+}
+
+.barber-shop-page .services-cards {
+    padding: 80px 0;
+    background: #f9f9f9;
+}
+
+.barber-shop-page .interior-gallery {
+    padding: 80px 0;
+}
+
+.barber-shop-page .contact-cta {
+    padding: 100px 0;
+}
+
+.barber-shop-page .contact-info {
+    padding: 80px 0;
+}
+
+/* Barber specific adjustments */
+.barber-shop-page .page-hero {
+    background: #1a1a1a;
+}
+
+.barber-shop-page .page-hero-title,
+.barber-shop-page .page-hero-subtitle {
+    color: white;
+}
+
+.barber-shop-page .hero-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.85), rgba(201, 169, 97, 0.15));
+    z-index: 1;
+}
+
+/* Service cards for barber */
+.barber-shop-page .service-card-item {
+    border: 1px solid #e5e5e5;
+}
+
+.barber-shop-page .service-card-item:hover {
+    border-color: #C9A961;
+    box-shadow: 0 8px 25px rgba(201, 169, 97, 0.15);
+}
+
+/* Dark theme adjustments */
+.barber-shop-page .salon-about {
+    background: #fafafa;
+}
+
+.barber-shop-page .interior-gallery {
+    background: white;
+}
+
+/* Barber service specific styles */
+.barber-service-info {
+    background: #f9f9f9;
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.barber-service-info h3 {
+    color: #1a1a1a;
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.barber-service-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.barber-service-info li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barber-service-info li:last-child {
+    border-bottom: none;
+}
+
+.barber-service-info .service-name {
+    color: #333;
+    font-weight: 500;
+}
+
+.barber-service-info .service-price {
+    color: #C9A961;
+    font-weight: 600;
+}
+
+/* Interior Gallery */
+.interior-gallery {
+    padding-bottom: 80px;
+}
+
+/* Interior Gallery for Barber (same as Beauty) */
+.interior-gallery .interior-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.interior-gallery .interior-photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    height: 300px;
+}
+
+.interior-gallery .interior-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.interior-gallery .interior-photo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.interior-gallery .interior-photo:hover img {
+    transform: scale(1.05);
+}
+
+/* CTA section inherits from contact-layout.css */
+/* Background image is set in contact-layout.css */
+
+/* Buttons styling */
+.barber-shop-page .btn-primary {
+    background: #C9A961;
+    color: white;
+    border: 2px solid #C9A961;
+}
+
+.barber-shop-page .btn-primary:hover {
+    background: #A08654;
+    border-color: #A08654;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .barber-gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .barber-service-info {
+        padding: 25px 20px;
+    }
+}

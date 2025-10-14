@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Naisy Prostějov - Kompletní péče o váš vzhled. Kadeřnický & kosmetický salon, Barbershop Gentleman a permanentní makeup. V centru Prostějova na Blahoslavově.">
+    <meta name="keywords" content="naisy prostějov, kadeřnictví prostějov, kosmetika prostějov, barbershop prostějov, permanentní makeup prostějov, beauty salon prostějov">
+    <meta property="og:title" content="Naisy - Beauty & Gentleman | Prostějov">
+    <meta property="og:description" content="Kompletní péče o váš vzhled v centru Prostějova. Kadeřnictví, kosmetika, barbershop a permanentní makeup.">
+    <meta property="og:type" content="website">
+    <title>Naisy - Beauty Salon & Barbershop Gentleman | Prostějov</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="48x48" href="https://res.cloudinary.com/dlvunn4yc/image/upload/v1760437947/NaisyFavicon_1_fv7qyg.png">
+    <link rel="apple-touch-icon" sizes="48x48" href="https://res.cloudinary.com/dlvunn4yc/image/upload/v1760437947/NaisyFavicon_1_fv7qyg.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css?v=1.4">
+    <link rel="stylesheet" href="css/homepage-services.css?v=1.4">
+    <link rel="stylesheet" href="css/carousel.css?v=1.4">
+    <link rel="stylesheet" href="css/animations.css?v=1.4">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/gallery-grid.css">
+</head>
+<body>
+    <!-- Navigation Component -->
+    <div id="navbar-container"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: linear-gradient(rgba(253, 252, 248, 0.65), rgba(253, 252, 248, 0.75)), url('https://res.cloudinary.com/dlvunn4yc/image/upload/c_limit,w_1920/f_auto/q_auto/v1759832050/HomeBackground_xulver.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="line-1">KRÁSA & ELEGANCE</span>
+                </h1>
+                <div class="hero-line"></div>
+                <p class="hero-subtitle">
+                    Kompletní péče o váš vzhled v Prostějově
+                </p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">
+                        Vybrat službu
+                        <i class="ph-arrow-down"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        Kontakt
+                        <i class="ph-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section → Carousel -->
+    <section class="video-section">
+        <div class="container">
+            <div class="video-wrapper">
+                <!-- Carousel místo statické fotky -->
+                <div class="carousel" id="salonCarousel" data-autoplay="6000">
+                    <div class="carousel__viewport">
+                        <div class="carousel__track" role="list" aria-label="Fotogalerie salonu">
+                            <!-- Images will be loaded dynamically -->
+                            <div style="text-align:center;padding:3rem;color:#999;">Načítám galerii...</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation -->
+                    <div class="carousel__nav">
+                        <button class="carousel__arrow carousel__arrow--prev" aria-label="Předchozí fotka">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        </button>
+                        <button class="carousel__arrow carousel__arrow--next" aria-label="Následující fotka">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </button>
+                    </div>
+                    
+                    <!-- Dots -->
+                    <div class="carousel__dots" role="tablist" aria-label="Navigace galerie"></div>
+                </div>
+                
+                <p class="video-caption">
+                    "Vítejte v mém světě krásy a péče"
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- About Section -->
+    <section class="about" style="position: relative;">
+        <div class="about-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(250, 249, 245, 0.95), rgba(250, 249, 245, 0.98));"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <div class="about-content-with-image">
+                <div class="about-image-wrapper">
+                    <img src="https://res.cloudinary.com/dlvunn4yc/image/upload/c_fill,w_400,h_500,g_auto/f_auto/q_auto/v1759832033/HomeVideo_ctjtwm.jpg" alt="Pavlína Leitgebová" loading="lazy" class="about-image">
+                </div>
+                <div class="about-text-wrapper">
+                    <h2 class="about-name">Pavlína Leitgebová</h2>
+                    <div class="about-divider"></div>
+                    <blockquote class="about-quote">
+                        "Krása není jen o vzhledu,<br>
+                        ale o pocitu sebevědomí."
+                    </blockquote>
+                    <div class="about-text">
+                        <div id="about-text-collapsed" class="about-text-collapsed">
+                            <p>Vystudovala jsem kosmetickou školu a v Beauty světě se pohybuji více než 20 let.</p>
+                            <button class="about-toggle" onclick="toggleAboutText()">
+                                Zobrazit více <span class="toggle-arrow">></span>
+                            </button>
+                        </div>
+                        <div id="about-text-expanded" class="about-text-expanded" style="display: none;">
+                            <p>
+                                Vystudovala jsem kosmetickou školu a v Beauty světě se pohybuji více než 20 let. 
+                                Vybudovala jsem dva salony, které nabízí komplexní péči o váš vzhled.
+                            </p>
+                            <p>
+                                Naisy Kadeřnický a Kosmetický salon je moje celoživotní práce a láska, kde se odráží každý můj den. 
+                                Barber Naisy Gentleman je prostředí kde muži zažijí příjemné, skoro až klubové prostředí, mám ráda když odcházejí upravení a odpočatí.
+                            </p>
+                            <p>
+                                Permanentní Make Up je dnes krásná a umělecká práce, která dlouhodobě zvýrazní ženskou tvář a já se dnes PMU věnuji nejvíce. 
+                                Vlastně ani nevím jestli je to práce nebo hobby - pro mě asi obojí.
+                            </p>
+                            <button class="about-toggle" onclick="toggleAboutText()">
+                                Zobrazit méně <span class="toggle-arrow" style="transform: rotate(90deg); display: inline-block;">></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services" style="background-image: url('https://res.cloudinary.com/dlvunn4yc/image/upload/c_limit,w_1920/f_auto/q_auto/v1759832050/HomeBackground_xulver.jpg'); background-size: cover; background-position: center; background-attachment: fixed; position: relative;">
+        <div class="services-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(253, 252, 248, 0.97);"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <h2 class="services-title" style="text-align: center;">Naše služby</h2>
+            <div class="services-grid">
+                <!-- Beauty Salon Card -->
+                <div class="service-card" data-service="beauty">
+                    <div class="service-icon">
+                        <i class="ph-flower-lotus-thin"></i>
+                    </div>
+                    <h3 class="service-name">Naisy Kadeřnický & Kosmetický salon</h3>
+                    <div class="service-buttons" style="margin-top: 2rem;">
+                        <a href="kadernictvi-kosmetika.html" class="btn-text">
+                            Více informací
+                            <i class="ph-arrow-right-thin"></i>
+                        </a>
+                        <a href="tel:+420582346071" class="btn-outline">
+                            Zavolat
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Barber Shop Card -->
+                <div class="service-card" data-service="barber">
+                    <div class="service-icon">
+                        <i class="ph-scissors-thin"></i>
+                    </div>
+                    <h3 class="service-name">Naisy Gentleman</h3>
+                    <div class="service-buttons" style="margin-top: 2rem;">
+                        <a href="naisy-gentleman.html" class="btn-text">
+                            Více informací
+                            <i class="ph-arrow-right-thin"></i>
+                        </a>
+                        <a href="https://naisy-gentleman.reservio.com" target="_blank" rel="noopener noreferrer" class="btn-outline">
+                            Rezervovat
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PMU Card -->
+                <div class="service-card" data-service="pmu">
+                    <div class="service-icon">
+                        <i class="ph-paint-brush-thin"></i>
+                    </div>
+                    <h3 class="service-name">Permanentní Make-up<br>Pavlína Leitgebová</h3>
+                    <div class="service-buttons" style="margin-top: 2rem;">
+                        <a href="permanentni-makeup.html" class="btn-text">
+                            Více informací
+                            <i class="ph-arrow-right-thin"></i>
+                        </a>
+                        <a href="https://pavlina-leitgebova-permanentni-make-up.reservio.com" target="_blank" rel="noopener noreferrer" class="btn-outline">
+                            Rezervovat
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                <h2 class="contact-title" style="text-align: center;">Najdete nás</h2>
+                    <div class="contact-divider"></div>
+                    
+                    <div class="contact-item">
+                        <i class="ph-map-pin-thin"></i>
+                        <div>
+                            <strong>Adresa</strong><br>
+                            Blahoslavova 8<br>
+                            Prostějov
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="ph-envelope-thin"></i>
+                        <div>
+                            <strong>Email</strong><br>
+                            <a href="mailto:leitgebova@naisy.cz">leitgebova@naisy.cz</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="ph-phone-thin"></i>
+                        <div>
+                            <strong>Telefon</strong><br>
+                            <a href="tel:+420582346071">+420 582 346 071</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2591.850!2d17.113!3d49.471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471293ab8b3f0f0b%3A0x0!2sBlahoslavova+8%2C+796+01+Prost%C4%9Bjov!5e0!3m2!1scs!2scz!4v1234567890"
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <nav class="mobile-menu">
+            <a href="kadernictvi-kosmetika.html">Kadeřnický & Kosmetický salon</a>
+            <a href="naisy-gentleman.html">Naisy Gentleman</a>
+            <a href="permanentni-makeup.html">Permanentní Make-up</a>
+        </nav>
+    </div>
+
+    <!-- Loaders -->
+    <script src="js/loaders/supabase-client.js"></script>
+    <script src="js/loaders/gallery-loader.js"></script>
+    <script src="js/loaders/popup-loader.js"></script>
+    
+    <script src="js/components/navbar.js?v=1.4"></script>
+    <script src="js/components/footer.js?v=1.4"></script>
+    <script src="js/main-clean.js?v=1.4"></script>
+    <script>
+        function toggleAboutText() {
+            const collapsed = document.getElementById('about-text-collapsed');
+            const expanded = document.getElementById('about-text-expanded');
+            
+            if (collapsed.style.display === 'none') {
+                collapsed.style.display = 'block';
+                expanded.style.display = 'none';
+            } else {
+                collapsed.style.display = 'none';
+                expanded.style.display = 'block';
+            }
+        }
+
+        // ========================================================================
+        // LOAD GALLERY FROM DATABASE FIRST
+        // ========================================================================
+        (async function() {
+            // Load home carousel from database
+            await loadGallery('home-carousel', 'salonCarousel', 'carousel');
+            
+            // Wait a bit for DOM to update, then initialize carousel
+            setTimeout(initCarousel, 100);
+        })();
+
+        // ========================================================================
+        // CAROUSEL MODULE - Senior Level Implementation
+        // ========================================================================
+        function initCarousel() {
+            'use strict';
+            
+            // Configuration
+            const CONFIG = {
+                autoplayDelay: 6000,
+                transitionDuration: 400,
+                swipeThreshold: 75,
+                touchStartThreshold: 10
+            };
+            
+            // State
+            const state = {
+                currentIndex: 0,
+                isTransitioning: false,
+                autoplayTimer: null,
+                touchStartX: 0,
+                touchEndX: 0,
+                isPaused: false
+            };
+            
+            // DOM Elements
+            const elements = {
+                carousel: document.getElementById('salonCarousel'),
+                track: null,
+                slides: null,
+                prevBtn: null,
+                nextBtn: null,
+                dotsContainer: null,
+                dots: []
+            };
+            
+            /**
+             * Initialize carousel
+             */
+            function init() {
+                if (!elements.carousel) {
+                    console.warn('Carousel element not found');
+                    return;
+                }
+                
+                // Cache DOM elements
+                elements.track = elements.carousel.querySelector('.carousel__track');
+                elements.slides = elements.carousel.querySelectorAll('.carousel__slide');
+                elements.prevBtn = elements.carousel.querySelector('.carousel__arrow--prev');
+                elements.nextBtn = elements.carousel.querySelector('.carousel__arrow--next');
+                elements.dotsContainer = elements.carousel.querySelector('.carousel__dots');
+                
+                if (!elements.track || !elements.slides.length) {
+                    console.warn('Carousel elements incomplete');
+                    return;
+                }
+                
+                // Setup
+                createDots();
+                attachEventListeners();
+                setupIntersectionObserver();
+                startAutoplay();
+                
+                // Initial state
+                updateUI();
+            }
+            
+            /**
+             * Create navigation dots
+             */
+            function createDots() {
+                if (!elements.dotsContainer) return;
+                
+                elements.dotsContainer.innerHTML = '';
+                elements.dots = [];
+                
+                elements.slides.forEach((_, index) => {
+                    const dot = document.createElement('button');
+                    dot.classList.add('carousel__dot');
+                    dot.setAttribute('role', 'tab');
+                    dot.setAttribute('aria-label', `Přejít na fotku ${index + 1}`);
+                    dot.setAttribute('aria-selected', index === 0 ? 'true' : 'false');
+                    
+                    if (index === 0) {
+                        dot.classList.add('carousel__dot--active');
+                    }
+                    
+                    dot.addEventListener('click', () => goToSlide(index));
+                    
+                    elements.dotsContainer.appendChild(dot);
+                    elements.dots.push(dot);
+                });
+            }
+            
+            /**
+             * Attach all event listeners
+             */
+            function attachEventListeners() {
+                // Arrow buttons
+                if (elements.prevBtn) {
+                    elements.prevBtn.addEventListener('click', handlePrevClick);
+                }
+                if (elements.nextBtn) {
+                    elements.nextBtn.addEventListener('click', handleNextClick);
+                }
+                
+                // Touch events
+                if (elements.track) {
+                    elements.track.addEventListener('touchstart', handleTouchStart, { passive: true });
+                    elements.track.addEventListener('touchend', handleTouchEnd, { passive: true });
+                    
+                    // Pause on hover (desktop only)
+                    elements.track.addEventListener('mouseenter', pauseAutoplay);
+                    elements.track.addEventListener('mouseleave', resumeAutoplay);
+                }
+                
+                // Keyboard navigation
+                elements.carousel.addEventListener('keydown', handleKeyDown);
+                
+                // Visibility change
+                document.addEventListener('visibilitychange', handleVisibilityChange);
+                
+                // Resize handler with debounce
+                let resizeTimer;
+                window.addEventListener('resize', () => {
+                    clearTimeout(resizeTimer);
+                    resizeTimer = setTimeout(() => {
+                        updateSlidePosition();
+                    }, 150);
+                });
+            }
+            
+            /**
+             * Setup Intersection Observer for performance
+             */
+            function setupIntersectionObserver() {
+                if (!('IntersectionObserver' in window)) return;
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            resumeAutoplay();
+                        } else {
+                            pauseAutoplay();
+                        }
+                    });
+                }, { threshold: 0.5 });
+                
+                observer.observe(elements.carousel);
+            }
+            
+            /**
+             * Navigate to specific slide
+             */
+            function goToSlide(index) {
+                if (state.isTransitioning) return;
+                
+                // Normalize index
+                const totalSlides = elements.slides.length;
+                state.currentIndex = ((index % totalSlides) + totalSlides) % totalSlides;
+                
+                state.isTransitioning = true;
+                
+                // Update slide position
+                updateSlidePosition();
+                
+                // Update UI
+                updateUI();
+                
+                // Reset transition flag
+                setTimeout(() => {
+                    state.isTransitioning = false;
+                }, CONFIG.transitionDuration);
+            }
+            
+            /**
+             * Update slide position (recalculate transform)
+             */
+            function updateSlidePosition() {
+                const translateX = -state.currentIndex * 100;
+                elements.track.style.transform = `translateX(${translateX}%)`;
+            }
+            
+            /**
+             * Go to next slide
+             */
+            function nextSlide() {
+                goToSlide(state.currentIndex + 1);
+            }
+            
+            /**
+             * Go to previous slide
+             */
+            function prevSlide() {
+                goToSlide(state.currentIndex - 1);
+            }
+            
+            /**
+             * Update UI elements
+             */
+            function updateUI() {
+                // Update dots
+                elements.dots.forEach((dot, index) => {
+                    const isActive = index === state.currentIndex;
+                    dot.classList.toggle('carousel__dot--active', isActive);
+                    dot.setAttribute('aria-selected', isActive ? 'true' : 'false');
+                });
+                
+                // Update ARIA live region
+                const liveRegion = elements.carousel.querySelector('[aria-live]');
+                if (liveRegion) {
+                    liveRegion.textContent = `Fotka ${state.currentIndex + 1} z ${elements.slides.length}`;
+                }
+            }
+            
+            /**
+             * Start autoplay
+             */
+            function startAutoplay() {
+                if (state.autoplayTimer) return;
+                
+                const delay = parseInt(elements.carousel.dataset.autoplay) || CONFIG.autoplayDelay;
+                state.autoplayTimer = setInterval(() => {
+                    if (!state.isPaused) {
+                        nextSlide();
+                    }
+                }, delay);
+            }
+            
+            /**
+             * Stop autoplay
+             */
+            function stopAutoplay() {
+                if (state.autoplayTimer) {
+                    clearInterval(state.autoplayTimer);
+                    state.autoplayTimer = null;
+                }
+            }
+            
+            /**
+             * Pause autoplay
+             */
+            function pauseAutoplay() {
+                state.isPaused = true;
+            }
+            
+            /**
+             * Resume autoplay
+             */
+            function resumeAutoplay() {
+                state.isPaused = false;
+            }
+            
+            /**
+             * Event Handlers
+             */
+            function handlePrevClick(e) {
+                e.preventDefault();
+                prevSlide();
+                stopAutoplay();
+                startAutoplay();
+            }
+            
+            function handleNextClick(e) {
+                e.preventDefault();
+                nextSlide();
+                stopAutoplay();
+                startAutoplay();
+            }
+            
+            function handleTouchStart(e) {
+                state.touchStartX = e.touches[0].clientX;
+            }
+            
+            function handleTouchEnd(e) {
+                state.touchEndX = e.changedTouches[0].clientX;
+                handleSwipe();
+            }
+            
+            function handleSwipe() {
+                const diff = state.touchStartX - state.touchEndX;
+                
+                if (Math.abs(diff) < CONFIG.swipeThreshold) return;
+                
+                if (diff > 0) {
+                    nextSlide();
+                } else {
+                    prevSlide();
+                }
+                
+                stopAutoplay();
+                startAutoplay();
+            }
+            
+            function handleKeyDown(e) {
+                switch(e.key) {
+                    case 'ArrowLeft':
+                        e.preventDefault();
+                        prevSlide();
+                        stopAutoplay();
+                        startAutoplay();
+                        break;
+                    case 'ArrowRight':
+                        e.preventDefault();
+                        nextSlide();
+                        stopAutoplay();
+                        startAutoplay();
+                        break;
+                }
+            }
+            
+            function handleVisibilityChange() {
+                if (document.hidden) {
+                    pauseAutoplay();
+                } else {
+                    resumeAutoplay();
+                }
+            }
+            
+            /**
+             * Cleanup function
+             */
+            function destroy() {
+                stopAutoplay();
+                
+                if (elements.prevBtn) {
+                    elements.prevBtn.removeEventListener('click', handlePrevClick);
+                }
+                if (elements.nextBtn) {
+                    elements.nextBtn.removeEventListener('click', handleNextClick);
+                }
+                if (elements.track) {
+                    elements.track.removeEventListener('touchstart', handleTouchStart);
+                    elements.track.removeEventListener('touchend', handleTouchEnd);
+                    elements.track.removeEventListener('mouseenter', pauseAutoplay);
+                    elements.track.removeEventListener('mouseleave', resumeAutoplay);
+                }
+                elements.carousel.removeEventListener('keydown', handleKeyDown);
+                document.removeEventListener('visibilitychange', handleVisibilityChange);
+            }
+            
+            // Expose destroy method for cleanup
+            window.salonCarousel = { destroy };
+            
+            // Initialize immediately
+            init();
+        }
+    </script>
+</body>
+</html>

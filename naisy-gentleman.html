@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Naisy Gentleman Barbershop Prostějov - Klasické pánské holičství v centru Prostějova. Profesionální střihy, úprava vousů, holení břitvou Hot Towel. Rezervujte si termín!">
+    <meta name="keywords" content="barbershop prostějov, pánské kadeřnictví prostějov, holení břitvou prostějov, úprava vousů prostějov, naisy gentleman">
+    <meta property="og:title" content="Naisy Gentleman Barbershop | Prostějov">
+    <meta property="og:description" content="Klasické pánské holičství v centru Prostějova. Profesionální péče pro moderního gentlemana.">
+    <meta property="og:type" content="website">
+    <title>Naisy Gentleman Barbershop | Pánské kadeřnictví Prostějov</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="48x48" href="https://res.cloudinary.com/dlvunn4yc/image/upload/v1760437947/NaisyFavicon_1_fv7qyg.png">
+    <link rel="apple-touch-icon" sizes="48x48" href="https://res.cloudinary.com/dlvunn4yc/image/upload/v1760437947/NaisyFavicon_1_fv7qyg.png">
+    
+    <!-- Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HairSalon",
+      "name": "Naisy Gentleman Barbershop",
+      "description": "Klasické pánské holičství v Prostějově",
+      "image": "https://res.cloudinary.com/dlvunn4yc/image/upload/v1759832275/NaisyGentlemanLogo_mvc7gc.svg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jiráskovo náměstí 429/3",
+        "addressLocality": "Prostějov",
+        "postalCode": "796 01",
+        "addressCountry": "CZ"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.472,
+        "longitude": 17.108
+      },
+      "telephone": "+420776880110",
+      "email": "gentleman@naisy.cz",
+      "priceRange": "380-1050 Kč",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "12:00"
+        }
+      ],
+      "url": "https://naisy.cz/naisy-gentleman.html"
+    }
+    </script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css?v=1.4">
+    <link rel="stylesheet" href="css/subpage.css?v=1.4">
+    <link rel="stylesheet" href="css/barber-services.css?v=1.4">
+    <link rel="stylesheet" href="css/services-expandable.css?v=1.4">
+    <link rel="stylesheet" href="css/contact-layout.css?v=1.4">
+    <link rel="stylesheet" href="css/animations.css?v=1.4">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/gallery-grid.css">
+</head>
+<body class="barber-shop-page">
+
+    <!-- Navigation Component -->
+    <div id="navbar-container"></div>
+
+    <!-- Hero Section -->
+    <section class="page-hero" data-service="barber">
+        <div class="hero-image" data-editable="image" data-field="barber.hero.image" style="background-image: linear-gradient(rgba(26, 26, 26, 0.55), rgba(26, 26, 26, 0.65)), url('https://res.cloudinary.com/dlvunn4yc/image/upload/c_limit,w_1920/f_auto/q_auto/v1759219074/Interier3_js7njd.jpg'); background-size: cover; background-position: center; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1;"></div>
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="page-hero-content">
+                <h1 class="page-hero-title" data-editable="text" data-field="barber.hero.title">Naisy GENTLEMAN | Barbershop Prostějov</h1>
+                <p class="page-hero-subtitle" data-editable="text" data-field="barber.hero.subtitle">Klasické pánské holičství v Prostějově</p>
+                <div class="barber-hero-buttons" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://naisy-gentleman.reservio.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="background: #C9A961; border-color: #C9A961; color: white;">
+                        Rezervovat termín
+                        <i class="ph-calendar"></i>
+                    </a>
+                    <a href="#pricing" class="btn btn-secondary" style="color: white; border-color: white;">
+                        <i class="fas fa-list"></i>
+                        Ceník
+                    </a>
+                    <a href="tel:+420776880110" class="btn btn-secondary" style="color: white; border-color: white;">
+                        <i class="fas fa-phone"></i>
+                        +420 776 880 110
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Salon -->
+    <section class="salon-about" style="background: #1a1a1a; color: white;">
+        <div class="container">
+            <div class="salon-about-content">
+                <h2 class="section-title" data-editable="text" data-field="barber.about.title" style="color: #C9A961;">O našem barbershopu</h2>
+                <div class="section-divider" style="background: #C9A961;"></div>
+                <p class="salon-description" data-editable="text" data-field="barber.about.description" style="color: #e0e0e0;">
+                    Jsme klasický barbershop a pánské holičství v Prostějově pouze pro muže. Chceme vytvářet prostředí, kde se muži cítí opravdu dobře.
+                </p>
+                <p class="salon-description" style="color: #e0e0e0;">
+                    Nabízíme moderní služby, které navazují na klasiku a staré časy, kdy muži chodili do holičství za očistou, relaxem a bylo společenskou nutností gentlemanská vizáž.
+                </p>
+                <p class="salon-description" style="color: #e0e0e0;">
+                    V našem pánském kadeřnictví v Prostějově chceme naslouchat Vašim přáním. Vytvářet klasiku, moderní trendy i extravaganci. Spojujeme klasické metody jako za starých časů s moderním stylingem.
+                </p>
+                <p class="salon-description" style="font-weight: 600; margin-top: 2rem; color: #C9A961;">
+                    Jsme místem pro muže, kteří pečují o svůj zevnějšek.
+                </p>
+                <p class="salon-description" style="text-align: center; margin-top: 2.5rem; font-size: 1.1rem;">
+                    <strong style="color: white;">Přijďte a vyzkoušejte naše služby, doufáme, že se budete cítit skvěle.</strong>
+                </p>
+                <div class="salon-features-grid">
+                    <div class="feature-card" style="background: rgba(201, 169, 97, 0.1); border: 1px solid rgba(201, 169, 97, 0.3);">
+                        <i class="ph-scissors-thin" style="color: #C9A961;"></i>
+                        <h4 data-editable="text" data-field="barber.features.0.title" style="color: white;">Návrat ke klasice</h4>
+                        <p data-editable="text" data-field="barber.features.0.description" style="color: #b0b0b0;">Tradiční řemeslo a techniky</p>
+                    </div>
+                    <div class="feature-card" style="background: rgba(201, 169, 97, 0.1); border: 1px solid rgba(201, 169, 97, 0.3);">
+                        <i class="ph-star-thin" style="color: #C9A961;"></i>
+                        <h4 data-editable="text" data-field="barber.features.1.title" style="color: white;">Výhradně pro muže</h4>
+                        <p data-editable="text" data-field="barber.features.1.description" style="color: #b0b0b0;">Prostředí, kde se muži cítí dobře</p>
+                    </div>
+                    <div class="feature-card" style="background: rgba(201, 169, 97, 0.1); border: 1px solid rgba(201, 169, 97, 0.3);">
+                        <i class="ph-clock-thin" style="color: #C9A961;"></i>
+                        <h4 data-editable="text" data-field="barber.features.2.title" style="color: white;">Relaxace a očista</h4>
+                        <p data-editable="text" data-field="barber.features.2.description" style="color: #b0b0b0;">Více než jen střih</p>
+                    </div>
+                    <div class="feature-card" style="background: rgba(201, 169, 97, 0.1); border: 1px solid rgba(201, 169, 97, 0.3);">
+                        <i class="ph-coffee-thin" style="color: #C9A961;"></i>
+                        <h4 data-editable="text" data-field="barber.features.3.title" style="color: white;">Gentlemanská vizáž</h4>
+                        <p data-editable="text" data-field="barber.features.3.description" style="color: #b0b0b0;">Moderní trendy i klasika</p>
+                    </div>
+                </div>
+                
+                <!-- Instagram -->
+                <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(201, 169, 97, 0.3);">
+                    <p style="font-size: 1.1rem; color: #C9A961; margin-bottom: 1rem;">Sledujte nás na Instagramu</p>
+                    <div style="display: flex; gap: 1.5rem; justify-content: center; align-items: center;">
+                        <a href="https://www.instagram.com/naisygentleman/" target="_blank" style="color: #C9A961; font-size: 2rem; transition: transform 0.3s; display: inline-block;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100063715831544" target="_blank" style="color: #C9A961; font-size: 2rem; transition: transform 0.3s; display: inline-block;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="pricing" class="salon-services" style="background-image: url('https://res.cloudinary.com/dlvunn4yc/image/upload/c_limit,w_1920/f_auto/q_auto/v1759219074/Interier3_js7njd.jpg'); background-size: cover; background-position: center; background-attachment: fixed; position: relative;">
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(26, 26, 26, 0.95);"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <h2 class="section-title" style="color: #fff; text-align: center;">Naše služby</h2>
+            <div class="section-divider" style="background: var(--accent-gold);"></div>
+            
+            <div class="services-categories" id="barber-pricing">
+                <!-- Pricing will be loaded dynamically -->
+            </div>
+            
+            <p style="text-align: center; margin-top: 2rem; color: var(--accent-gold); font-style: italic;">
+                CENY JSOU VČETNĚ OBČERSTVENÍ
+            </p>
+            
+            <!-- Instagram Work Reference -->
+            <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(201, 169, 97, 0.3);">
+                <p style="font-size: 1.05rem; color: #e0e0e0; margin-bottom: 1rem;">
+                    Více z naší práce najdete na Instagramu
+                </p>
+                <a href="https://www.instagram.com/naisygentleman/" target="_blank" style="display: inline-flex; align-items: center; gap: 0.75rem; color: #C9A961; font-size: 1.05rem; font-weight: 500; transition: all 0.3s; text-decoration: none;" onmouseover="this.style.transform='scale(1.05)'; this.style.color='#9b7c3f'" onmouseout="this.style.transform='scale(1)'; this.style.color='#C9A961'">
+                    <i class="fab fa-instagram" style="font-size: 1.8rem;"></i>
+                    <span>@naisygentleman</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interior Gallery -->
+    <section class="interior-gallery" style="background: #0d0d0d; color: white; padding: 4rem 0;">
+        <div class="container">
+            <h2 class="section-title" data-editable="text" data-field="barber.gallery.title" style="color: #C9A961; text-align: center;">Náš barber shop</h2>
+            <div class="section-divider" style="background: #C9A961;"></div>
+            <div class="interior-grid" id="barber-gallery">
+                <!-- Gallery will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA (before contact info) -->
+    <section id="booking" class="contact-cta" style="background-image: url('https://res.cloudinary.com/dlvunn4yc/image/upload/c_limit,w_1920/f_auto/q_auto/v1759219074/Interier3_js7njd.jpg'); background-size: cover; background-position: center; background-attachment: fixed; position: relative;">
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.8));"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <div class="cta-content">
+                <h2 class="cta-title" style="color: #C9A961;">Připraveni na nový střih?</h2>
+                <p class="cta-subtitle" style="color: #e0e0e0;">Rezervujte si svůj termín ještě dnes</p>
+                <div class="cta-buttons">
+                    <a href="https://naisy-gentleman.reservio.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="background: #C9A961; border-color: #C9A961; color: white;">
+                        <i class="fas fa-calendar-check"></i>
+                        Rezervovat online
+                    </a>
+                    <a href="tel:+420776880110" class="btn btn-secondary" style="border-color: #C9A961; color: #C9A961;">
+                        <i class="fas fa-phone"></i>
+                        +420 776 880 110
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info with Opening Hours -->
+    <section class="contact-info" style="background: #0d0d0d; color: white;">
+        <div class="container">
+            <h2 class="section-title" style="color: #C9A961;">Kontakt</h2>
+            <div class="section-divider" style="background: #C9A961;"></div>
+            
+            <!-- Contact and Hours Row -->
+            <div class="contact-hours-row">
+                <!-- Contact Details -->
+                <div class="contact-details-box" style="background: rgba(201, 169, 97, 0.1); border: 1px solid rgba(201, 169, 97, 0.3); padding: 2rem; border-radius: 8px;">
+                    <h3 style="color: #C9A961; margin-bottom: 1.5rem;">Kde nás najdete</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt" style="color: #C9A961;"></i>
+                        <div style="color: #e0e0e0;">
+                            <span data-editable="text" data-field="company.address">Jiráskovo nám. 429/3</span><br>
+                            <span data-editable="text" data-field="company.city">796 01 Prostějov</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone" style="color: #C9A961;"></i>
+                        <div>
+                            <a href="tel:+420776880110" data-editable="text" data-field="company.phoneBarber" style="color: white;">+420 776 880 110</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope" style="color: #C9A961;"></i>
+                        <div>
+                            <a href="mailto:gentleman@naisy.cz" data-editable="text" data-field="company.barberEmail" style="color: white;">gentleman@naisy.cz</a>
+                        </div>
+                    </div>
+                    <div class="contact-item social-links">
+                        <a href="https://www.instagram.com/naisygentleman/" target="_blank" class="social-link" title="Instagram" style="color: #C9A961; font-size: 1.5rem;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100063715831544" target="_blank" class="social-link" title="Facebook" style="color: #C9A961; font-size: 1.5rem;">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Opening Hours -->
+                <div class="opening-hours-box" style="background: rgba(201, 169, 97, 0.1); border: 1px solid rgba(201, 169, 97, 0.3); padding: 2rem; border-radius: 8px;">
+                    <h3 style="color: #C9A961; margin-bottom: 1.5rem;">Otevírací doba</h3>
+                    <div id="barber-hours">
+                        <!-- Hours will be loaded dynamically -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Map (full width below) -->
+            <div class="contact-map-wrapper" style="margin-top: 2rem; border: 2px solid rgba(201, 169, 97, 0.3); border-radius: 8px; overflow: hidden;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2591.850!2d17.108!3d49.472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471293ac4f5b0d0f%3A0x0!2sJir%C3%A1skovo+n%C3%A1m%C4%9Bst%C3%AD+429%2F3%2C+796+01+Prost%C4%9Bjov!5e0!3m2!1scs!2scz!4v1234567890"
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <nav class="mobile-menu">
+            <a href="index.html">Domů</a>
+            <a href="kadernictvi-kosmetika.html">Kadeřnický & Kosmetický salon</a>
+            <a href="naisy-gentleman.html">Naisy Gentleman</a>
+            <a href="permanentni-makeup.html">Permanentní Make-up</a>
+        </nav>
+    </div>
+
+    <!-- Loaders -->
+    <script src="js/loaders/supabase-client.js"></script>
+    <script src="js/loaders/gallery-loader.js"></script>
+    <script src="js/loaders/popup-loader.js"></script>
+    <script src="js/loaders/pricing-loader.js"></script>
+    <script src="js/loaders/opening-hours-loader.js"></script>
+    
+    <!-- Scripts -->
+    <script src="js/components/navbar.js?v=1.4"></script>
+    <script src="js/components/footer.js?v=1.4"></script>
+    <script src="js/main-clean.js?v=1.4"></script>
+    
+    <!-- Initialize Dynamic Content -->
+    <script>
+        loadGallery('interior-barber', 'barber-gallery', 'grid');
+        loadPricing('barber', 'barber-pricing');
+        loadOpeningHours('barber', 'barber-hours');
+    </script>
+    
+    <style>
+        @media (max-width: 768px) {
+            .barber-hero-buttons {
+                flex-direction: column !important;
+                width: 100%;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+            .barber-hero-buttons .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</body>
+</html>

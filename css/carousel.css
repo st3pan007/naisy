@@ -1,0 +1,314 @@
+/* ==========================================================================
+   CAROUSEL COMPONENT - Senior Level Implementation
+   ========================================================================== */
+
+/* CSS Custom Properties */
+:root {
+    --carousel-max-width: 900px;
+    --carousel-border-radius: 12px;
+    --carousel-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    --carousel-transition: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    --carousel-arrow-size: 50px;
+    --carousel-arrow-size-mobile: 40px;
+    --carousel-dot-size: 10px;
+    --carousel-dot-gap: 8px;
+}
+
+/* Section Wrapper */
+.salon-carousel {
+    padding: 5rem 0;
+    background: #faf9f5;
+    overflow: hidden;
+}
+
+.salon-carousel__header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.salon-carousel__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.salon-carousel__divider {
+    width: 60px;
+    height: 2px;
+    background: var(--accent-gold);
+    margin: 0 auto;
+}
+
+/* Carousel Container */
+.carousel {
+    position: relative;
+    max-width: var(--carousel-max-width);
+    margin: 0 auto;
+    width: 100%;
+}
+
+.carousel__viewport {
+    overflow: hidden;
+    border-radius: var(--carousel-border-radius);
+    box-shadow: var(--carousel-shadow);
+    position: relative;
+}
+
+.carousel__track {
+    display: flex;
+    transition: transform var(--carousel-transition);
+    will-change: transform;
+    height: 100%;
+}
+
+.carousel__slide {
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    position: relative;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+}
+
+.carousel__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* Navigation Arrows */
+.carousel__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.carousel__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    width: var(--carousel-arrow-size);
+    height: var(--carousel-arrow-size);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    z-index: 10;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.carousel__arrow:hover {
+    background: white;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.carousel__arrow:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.carousel__arrow--prev {
+    left: 1rem;
+}
+
+.carousel__arrow--next {
+    right: 1rem;
+}
+
+.carousel__arrow svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: #1a1a1a;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* Dots Navigation */
+.carousel__dots {
+    display: flex;
+    justify-content: center;
+    gap: var(--carousel-dot-gap);
+    margin-top: 2rem;
+}
+
+.carousel__dot {
+    width: var(--carousel-dot-size);
+    height: var(--carousel-dot-size);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.2);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.carousel__dot--active {
+    background: var(--accent-gold);
+    transform: scale(1.2);
+}
+
+.carousel__dot:hover:not(.carousel__dot--active) {
+    background: rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
+}
+
+/* Loading State */
+.carousel__slide--loading {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s ease-in-out infinite;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN - Mobile First Approach
+   ========================================================================== */
+
+/* Mobile: < 768px */
+@media (max-width: 767px) {
+    .salon-carousel {
+        padding: 3rem 0;
+    }
+    
+    .salon-carousel__title {
+        font-size: 2rem;
+    }
+    
+    .carousel {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .carousel__viewport {
+        border-radius: 8px;
+    }
+    
+    .carousel__slide {
+        aspect-ratio: 16 / 10;
+    }
+    
+    /* Arrows below image on mobile */
+    .carousel__arrow {
+        position: static;
+        transform: none;
+        width: var(--carousel-arrow-size-mobile);
+        height: var(--carousel-arrow-size-mobile);
+    }
+    
+    .carousel__arrow:hover {
+        transform: scale(1.1);
+    }
+    
+    .carousel__arrow:active {
+        transform: scale(0.95);
+    }
+    
+    .carousel__arrow svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .carousel__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        position: static;
+        margin-top: 1.5rem;
+    }
+    
+    /* Hide dots on mobile */
+    .carousel__dots {
+        display: none;
+    }
+}
+
+/* Tablet: 768px - 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .carousel {
+        max-width: 90%;
+    }
+    
+    .carousel__slide {
+        aspect-ratio: 8 / 5;
+    }
+    
+    .carousel__arrow {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .carousel__arrow--prev {
+        left: 0.5rem;
+    }
+    
+    .carousel__arrow--next {
+        right: 0.5rem;
+    }
+}
+
+/* Desktop: 1024px - 1439px */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .carousel {
+        max-width: 900px;
+    }
+}
+
+/* Large Desktop: >= 1440px */
+@media (min-width: 1440px) {
+    .salon-carousel {
+        padding: 6rem 0;
+    }
+    
+    .salon-carousel__title {
+        font-size: 3rem;
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    .carousel__track {
+        transition: none;
+    }
+    
+    .carousel__arrow,
+    .carousel__dot {
+        transition: none;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .carousel__arrow,
+    .carousel__dots {
+        display: none;
+    }
+    
+    .carousel__track {
+        transform: none !important;
+    }
+    
+    .carousel__slide {
+        page-break-inside: avoid;
+    }
+}

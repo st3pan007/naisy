@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kadeřnictví Naisy - Profesionální péče o vaše vlasy s použitím prémiových produktů L'Oréal Professionnel a Kérastase.">
+    <title>Kadeřnictví | Naisy Kadeřnický & Kosmetický salon</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="48x48" href="https://res.cloudinary.com/dlvunn4yc/image/upload/v1760437947/NaisyFavicon_1_fv7qyg.png">
+    <link rel="apple-touch-icon" sizes="48x48" href="https://res.cloudinary.com/dlvunn4yc/image/upload/v1760437947/NaisyFavicon_1_fv7qyg.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/service-detail.css">
+    <link rel="stylesheet" href="../../css/service-detail-updated.css">
+    <link rel="stylesheet" href="../../css/service-hero-enhanced.css">
+    <link rel="stylesheet" href="../../css/popup.css">
+    <link rel="stylesheet" href="../../css/gallery-grid.css">
+</head>
+<body class="service-detail-page">
+
+    <!-- Navigation Component -->
+    <div id="navbar-container"></div>
+
+    <!-- Service Hero -->
+    <section class="service-hero" 
+             data-title="Kadeřnictví" 
+             data-subtitle="L'Oréal Professionnel · Kérastase"
+             data-background="https://res.cloudinary.com/dlvunn4yc/image/upload/c_limit,w_1920/f_auto/q_auto/v1759503013/KadernictviHeader_x9rbaa.jpg">
+    </section>
+
+    <!-- Service Content -->
+    <section class="service-content">
+        <div class="container">
+            <!-- Contact Icons -->
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <div style="display: inline-flex; gap: 2rem; align-items: center; justify-content: center;">
+                    <a href="https://www.instagram.com/naisy_prostejov/" target="_blank" style="color: var(--accent-gold); font-size: 1.5rem; transition: color 0.3s;" onmouseover="this.style.color='#9b7c3f'" onmouseout="this.style.color='var(--accent-gold)'">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100034744496776" target="_blank" style="color: var(--accent-gold); font-size: 1.5rem; transition: color 0.3s;" onmouseover="this.style.color='#9b7c3f'" onmouseout="this.style.color='var(--accent-gold)'">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="tel:+420582346071" style="color: var(--accent-gold); font-size: 1.5rem; transition: color 0.3s;" onmouseover="this.style.color='#9b7c3f'" onmouseout="this.style.color='var(--accent-gold)'">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="service-intro">
+                <h2>Profesionální péče o vaše vlasy</h2>
+                <p>Používáme pouze prémiové produkty značek L'Oréal Professionnel a Kérastase. Naši kadeřníci jsou pravidelně školeni v nejnovějších technikách a trendech, aby vám mohli poskytnout tu nejlepší péči.</p>
+                
+                <div style="margin-top: 1.5rem; padding: 1.5rem; background: rgba(201, 169, 97, 0.08); border-left: 3px solid var(--accent-gold);">
+                    <p style="margin: 0; font-weight: 500; margin-bottom: 1rem;">Proč právě tyto značky?</p>
+                    <ul style="margin: 0; padding-left: 1.2rem; list-style: none;">
+                        <li style="padding: 0.3rem 0;">• Kvalita vašich vlasů je pro nás důležitá</li>
+                        <li style="padding: 0.3rem 0;">• Krásný střih a barva vyniknou pouze na zdravých vlasech</li>
+                        <li style="padding: 0.3rem 0;">• L'ORÉAL PROFESSIONNEL je značkou nejlepších světových kadeřníků</li>
+                        <li style="padding: 0.3rem 0;">• KÉRASTASE PARIS - symbol luxusu</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pricing-section">
+                <h3 class="pricing-title">Ceník služeb</h3>
+                <div id="pricing-container">
+                    <!-- Pricing will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Slider Section -->
+    <section class="image-slider-section" style="padding: 4rem 0; background: var(--warm-white);">
+        <div class="container">
+            <h3 style="text-align: center; font-size: 2rem; margin-bottom: 3rem;">Naše práce</h3>
+            
+            <div class="image-slider" id="kadernictvi-slider" style="position: relative; max-width: 900px; margin: 0 auto;">
+                <div class="slider-wrapper" style="overflow: hidden; border-radius: 8px;">
+                    <div class="slider-track" style="display: flex; transition: transform 0.4s ease;">
+                        <!-- Slides will be loaded dynamically -->
+                    </div>
+                </div>
+                
+                <!-- Navigation Arrows -->
+                <button class="slider-btn prev" onclick="moveSlide(-1)" style="position: absolute; top: 50%; left: 1rem; transform: translateY(-50%); background: rgba(255, 255, 255, 0.9); border: none; width: 50px; height: 50px; border-radius: 50%; cursor: pointer; font-size: 1.5rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s;" onmouseover="this.style.background='white'" onmouseout="this.style.background='rgba(255, 255, 255, 0.9)'">
+                    ‹
+                </button>
+                <button class="slider-btn next" onclick="moveSlide(1)" style="position: absolute; top: 50%; right: 1rem; transform: translateY(-50%); background: rgba(255, 255, 255, 0.9); border: none; width: 50px; height: 50px; border-radius: 50%; cursor: pointer; font-size: 1.5rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s;" onmouseover="this.style.background='white'" onmouseout="this.style.background='rgba(255, 255, 255, 0.9)'">
+                    ›
+                </button>
+                
+                <!-- Dots -->
+                <div class="slider-dots" style="display: flex; justify-content: center; gap: 10px; margin-top: 2rem;">
+                    <!-- Dots will be generated dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="service-cta" style="background-image: url('https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+        <div class="container">
+            <h3>Připraveni na nový účes?</h3>
+            <p>Rezervujte si svůj termín ještě dnes</p>
+            <div class="cta-buttons">
+                <a href="tel:+420582346071" class="btn btn-primary">
+                    <i class="fas fa-phone"></i>
+                    Zavolat: +420 582 346 071
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <nav class="mobile-menu">
+            <a href="../../index.html">Domů</a>
+            <a href="../../kadernictvi-kosmetika.html">Kadeřnický & Kosmetický salon</a>
+            <a href="../../naisy-gentleman.html">Naisy Gentleman</a>
+            <a href="../../permanentni-makeup.html">Permanentní Make-up</a>
+        </nav>
+    </div>
+
+    <!-- Loaders -->
+    <script src="../../js/loaders/supabase-client.js"></script>
+    <script src="../../js/loaders/gallery-loader.js"></script>
+    <script src="../../js/loaders/popup-loader.js"></script>
+    <script src="../../js/loaders/pricing-loader.js"></script>
+    
+    <!-- Scripts -->
+    <script src="../../js/components/navbar.js"></script>
+    <script src="../../js/components/footer.js"></script>
+    <script src="../../js/components/service-header.js"></script>
+    <script src="../../js/main-clean.js"></script>
+    
+    <!-- Initialize Dynamic Content -->
+    <script>
+        (async function() {
+            // Load gallery first
+            await loadGallery('kadernictvi-work', 'kadernictvi-slider', 'slider');
+            
+            // Load pricing
+            loadPricing('kadernictvi', 'pricing-container');
+            
+            // Initialize slider after gallery is loaded
+            setTimeout(initSlider, 500);
+        })();
+        
+        // Slider functionality
+        let currentSlide = 0;
+        let slides = [];
+        let dots = [];
+        let track = null;
+        let autoplayInterval;
+
+        function initSlider() {
+            slides = document.querySelectorAll('.slide');
+            dots = document.querySelectorAll('.dot');
+            track = document.querySelector('.slider-track');
+            
+            if (slides.length > 0) {
+                updateSlider();
+                startAutoplay();
+            }
+        }
+
+        function updateSlider() {
+            if (!track) return;
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+            
+            dots.forEach((dot, index) => {
+                if (index === currentSlide) {
+                    dot.style.background = 'var(--accent-gold)';
+                } else {
+                    dot.style.background = 'transparent';
+                }
+            });
+        }
+
+        function moveSlide(direction) {
+            currentSlide += direction;
+            
+            if (currentSlide < 0) {
+                currentSlide = slides.length - 1;
+            } else if (currentSlide >= slides.length) {
+                currentSlide = 0;
+            }
+            
+            updateSlider();
+            resetAutoplay();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlider();
+            resetAutoplay();
+        }
+
+        function startAutoplay() {
+            autoplayInterval = setInterval(() => {
+                currentSlide = (currentSlide + 1) % slides.length;
+                updateSlider();
+            }, 4000);
+        }
+
+        function resetAutoplay() {
+            clearInterval(autoplayInterval);
+            startAutoplay();
+        }
+
+        // Touch support
+        let touchStartX = 0;
+        let touchEndX = 0;
+        const sliderEl = document.querySelector('.image-slider');
+
+        if (sliderEl) {
+            sliderEl.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+            });
+
+            sliderEl.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+            });
+        }
+
+        function handleSwipe() {
+            if (touchEndX < touchStartX - 50) {
+                moveSlide(1);
+            }
+            if (touchEndX > touchStartX + 50) {
+                moveSlide(-1);
+            }
+        }
+    </script>
+</body>
+</html>
